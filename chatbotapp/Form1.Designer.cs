@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,16 +15,15 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             btnSend = new Button();
             lblResponse = new Label();
             lblQuestion = new Label();
             txtQuestion = new TextBox();
+            btnShowAll = new Button();
+            txtDeleteId = new TextBox();
+            btnDeleteId = new Button();
             SuspendLayout();
             // 
             // btnSend
@@ -68,17 +60,46 @@
             txtQuestion.TabIndex = 3;
             txtQuestion.TextChanged += txtQuestion_TextChanged;
             // 
+            // btnShowAll
+            // 
+            btnShowAll.Location = new Point(587, 160);
+            btnShowAll.Name = "btnShowAll";
+            btnShowAll.Size = new Size(94, 29);
+            btnShowAll.TabIndex = 4;
+            btnShowAll.Text = "Show all";
+            btnShowAll.UseVisualStyleBackColor = true;
+            btnShowAll.Click += btnShowAll_Click;
+            // 
+            // txtDeleteId
+            // 
+            txtDeleteId.Location = new Point(148, 189);
+            txtDeleteId.Name = "txtDeleteId";
+            txtDeleteId.Size = new Size(125, 27);
+            txtDeleteId.TabIndex = 5;
+            // 
+            // btnDeleteId
+            // 
+            btnDeleteId.Location = new Point(434, 189);
+            btnDeleteId.Name = "btnDeleteId";
+            btnDeleteId.Size = new Size(94, 29);
+            btnDeleteId.TabIndex = 6;
+            btnDeleteId.Text = "Delete";
+            btnDeleteId.UseVisualStyleBackColor = true;
+            btnDeleteId.Click += btnDeleteId_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnDeleteId);
+            Controls.Add(txtDeleteId);
+            Controls.Add(btnShowAll);
             Controls.Add(txtQuestion);
             Controls.Add(lblQuestion);
             Controls.Add(lblResponse);
             Controls.Add(btnSend);
             Name = "Form1";
-            Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -90,5 +111,8 @@
         private Label lblResponse;
         private Label lblQuestion;
         private TextBox txtQuestion;
+        private Button btnShowAll;
+        private TextBox txtDeleteId;
+        private Button btnDeleteId;
     }
 }
