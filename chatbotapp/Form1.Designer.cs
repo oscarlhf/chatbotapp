@@ -28,7 +28,7 @@
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(434, 121);
+            btnSend.Location = new Point(434, 120);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(94, 29);
             btnSend.TabIndex = 0;
@@ -43,6 +43,7 @@
             lblResponse.Name = "lblResponse";
             lblResponse.Size = new Size(0, 20);
             lblResponse.TabIndex = 1;
+            lblResponse.Click += lblResponse_Click;
             // 
             // lblQuestion
             // 
@@ -51,6 +52,7 @@
             lblQuestion.Name = "lblQuestion";
             lblQuestion.Size = new Size(0, 20);
             lblQuestion.TabIndex = 2;
+            
             // 
             // txtQuestion
             // 
@@ -76,6 +78,7 @@
             txtDeleteId.Name = "txtDeleteId";
             txtDeleteId.Size = new Size(125, 27);
             txtDeleteId.TabIndex = 5;
+           
             // 
             // btnDeleteId
             // 

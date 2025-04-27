@@ -110,5 +110,10 @@ namespace chatbotapp
                     MessageBox.Show($"No question found with ID {id}.");
             }
         }
+
+        private void lblResponse_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
